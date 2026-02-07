@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aditya Sarkar | Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #0f172a; /* Navy Blue */
+            --accent: #2563eb; /* Bright Blue */
+            --bg: #f8fafc;
+            --card-bg: #ffffff;
+            --text-main: #334155;
+            --text-light: #64748b;
+            --border: #e2e8f0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg);
+            color: var(--text-main);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        /* Header Section */
+        header {
+            text-align: center;
+            margin-bottom: 60px;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 40px;
+        }
+
+        h1 {
+            color: var(--primary);
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            letter-spacing: -0.5px;
+        }
+
+        .tagline {
+            font-size: 1.1rem;
+            color: var(--text-light);
+            margin-bottom: 20px;
+        }
+
+        .social-links a {
+            color: var(--text-main);
+            font-size: 1.5rem;
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+
+        .social-links a:hover {
+            color: var(--accent);
+        }
+
+        /* Section Styling */
+        .section-title {
+            display: flex;
+            align-items: center;
+            font-size: 1.5rem;
+            color: var(--primary);
+            margin-top: 50px;
+            margin-bottom: 25px;
+            border-left: 4px solid var(--accent);
+            padding-left: 15px;
+        }
+
+        .section-desc {
+            font-size: 0.95rem;
+            color: var(--text-light);
+            margin-bottom: 30px;
+            margin-top: -15px;
+            padding-left: 20px;
+            font-style: italic;
+        }
+
+        /* Card Styling */
+        .project-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 25px;
+            margin-bottom: 20px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+
+        .project-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+        }
+
+        .project-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin: 0 0 10px 0;
+        }
+
+        .project-description {
+            font-size: 1rem;
+            color: var(--text-main);
+            margin-bottom: 15px;
+        }
+
+        /* Skills Tags */
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 20px;
+        }
+
+        .skill-tag {
+            background-color: #eff6ff;
+            color: var(--accent);
+            font-size: 0.8rem;
+            font-weight: 600;
+            padding: 4px 10px;
+            border-radius: 20px;
+            border: 1px solid #dbeafe;
+        }
+
+        /* Buttons */
+        .btn-container {
+            display: flex;
+            gap: 15px;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            padding: 8px 16px;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.2s;
+        }
+
+        .btn-primary {
+            background-color: var(--primary);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background-color: #1e293b;
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            border: 1px solid var(--border);
+            color: var(--text-main);
+        }
+
+        .btn-outline:hover {
+            background-color: #f1f5f9;
+            border-color: #cbd5e1;
+        }
+
+        .btn i {
+            margin-right: 8px;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            margin-top: 80px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border);
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 600px) {
+            .btn-container {
+                flex-direction: column;
+                gap: 10px;
+            }
+            .btn {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Aditya Sarkar</h1>
+            <p class="tagline">Quantitative Economics | Finance | Data Science</p>
+            <div class="social-links">
+                <a href="#" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="#" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="mailto:your.email@example.com" title="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+        </header>
+
+        <h2 class="section-title"><i class="fas fa-chart-line" style="margin-right: 10px;"></i> Strategic Analysis & Valuation</h2>
+        <p class="section-desc">Corporate finance, equity research, and strategic advisory projects.</p>
+
+        <div class="project-card">
+            <h3 class="project-title">Strategic Valuation: Tesla (TSLA)</h3>
+            <div class="skills-container">
+                <span class="skill-tag">Relative Valuation</span>
+                <span class="skill-tag">PowerPoint Storytelling</span>
+                <span class="skill-tag">Strategy</span>
+            </div>
+            <p class="project-description">
+                A visual pitch deck analysing Tesla’s P/E ratio, competitive moat, and market positioning in the EV supply chain. Demonstrates ability to communicate complex financial data visually.
+            </p>
+            <div class="btn-container">
+                <a href="#" class="btn btn-primary"><i class="fas fa-file-pdf"></i> View Presentation</a>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <h3 class="project-title">Investment Thesis: Duolingo (NEXA)</h3>
+            <div class="skills-container">
+                <span class="skill-tag">Equity Research</span>
+                <span class="skill-tag">Market Sizing (TAM)</span>
+                <span class="skill-tag">Financial Analysis</span>
+            </div>
+            <p class="project-description">
+                A buy-side investment memo analysing user monetization, retention metrics, and long-term growth drivers.
+            </p>
+            <div class="btn-container">
+                <a href="#" class="btn btn-primary"><i class="fas fa-file-pdf"></i> Read Investment Memo</a>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <h3 class="project-title">Strategic M&A Advisory: Dyno Nobel</h3>
+            <div class="skills-container">
+                <span class="skill-tag">M&A Modelling</span>
+                <span class="skill-tag">DCF</span>
+                <span class="skill-tag">Synergy Analysis</span>
+            </div>
+            <p class="project-description">
+                A buy-side acquisition case study quantifying the strategic fit and cost synergies of the Dyno Nobel acquisition.
+            </p>
+            <div class="btn-container">
+                <a href="#" class="btn btn-primary"><i class="fas fa-file-pdf"></i> Read Deal Deck</a>
+            </div>
+        </div>
+
+        <h2 class="section-title"><i class="fas fa-laptop-code" style="margin-right: 10px;"></i> Quantitative Analysis & Data Science</h2>
+        <p class="section-desc">Machine Learning applications in finance and business analytics.</p>
+
+        <div class="project-card">
+            <h3 class="project-title">ML in Finance: Amazon Dividend Probability</h3>
+            <div class="skills-container">
+                <span class="skill-tag">Python (Scikit-Learn)</span>
+                <span class="skill-tag">Random Forest</span>
+                <span class="skill-tag">Financial Modelling</span>
+            </div>
+            <p class="project-description">
+                Built a Machine Learning model to predict the probability of Amazon initiating a dividend by analysing the payout characteristics of 142 comparable firms.
+            </p>
+            <div class="btn-container">
+                <a href="#" class="btn btn-primary"><i class="fas fa-file-pdf"></i> Read Report</a>
+                <a href="#" class="btn btn-outline"><i class="fab fa-github"></i> View Code</a>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <h3 class="project-title">Macroeconomic Convergence with R</h3>
+            <div class="skills-container">
+                <span class="skill-tag">R Programming</span>
+                <span class="skill-tag">ggplot2</span>
+                <span class="skill-tag">Growth Theory</span>
+            </div>
+            <p class="project-description">
+                A technical analysis of the Solow-Swan growth model, using R to test convergence hypotheses across OECD nations.
+            </p>
+            <div class="btn-container">
+                <a href="#" class="btn btn-primary"><i class="fas fa-file-pdf"></i> Read Assignment</a>
+                <a href="#" class="btn btn-outline"><i class="fab fa-github"></i> View R Code</a>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <h3 class="project-title">Book Recommendation System</h3>
+            <div class="skills-container">
+                <span class="skill-tag">Python (Pandas)</span>
+                <span class="skill-tag">K-Means Clustering</span>
+                <span class="skill-tag">Business Analytics</span>
+            </div>
+            <p class="project-description">
+                Designed a recommendation engine for an online retailer using clustering algorithms to identify profitable inventory segments.
+            </p>
+            <div class="btn-container">
+                <a href="#" class="btn btn-primary"><i class="fas fa-file-pdf"></i> Read Report</a>
+                <a href="#" class="btn btn-outline"><i class="fab fa-github"></i> View Code</a>
+            </div>
+        </div>
+
+         <div class="project-card">
+            <h3 class="project-title">Applied ML: Computer Vision & NLP</h3>
+            <div class="skills-container">
+                <span class="skill-tag">Computer Vision</span>
+                <span class="skill-tag">NLP</span>
+                <span class="skill-tag">Model Tuning</span>
+            </div>
+            <p class="project-description">
+                A comparative study of Supervised Learning methods for Traffic Sign Recognition and SMS Spam Detection.
+            </p>
+            <div class="btn-container">
+                <a href="#" class="btn btn-primary"><i class="fas fa-file-pdf"></i> Traffic Signs</a>
+                <a href="#" class="btn btn-primary"><i class="fas fa-file-pdf"></i> Spam Detection</a>
+            </div>
+        </div>
+
+        <h2 class="section-title"><i class="fas fa-university" style="margin-right: 10px;"></i> Economic Research & Policy</h2>
+        <p class="section-desc">Academic writing, policy evaluation, and economic history.</p>
+
+        <div class="project-card">
+            <h3 class="project-title">The Australian Mining Boom</h3>
+            <div class="skills-container">
+                <span class="skill-tag">Trade Theory</span>
+                <span class="skill-tag">ABS Data Analysis</span>
+                <span class="skill-tag">Policy Evaluation</span>
+            </div>
+            <p class="project-description">
+                A rigorous investigation into the structural effects of the mining boom on Australian manufacturing ("Dutch Disease") and aggregate welfare.
+            </p>
+            <div class="btn-container">
+                <a href="#" class="btn btn-primary"><i class="fas fa-file-pdf"></i> Read Research Paper</a>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <h3 class="project-title">Japan’s Post-War Economic Miracle</h3>
+            <div class="skills-container">
+                <span class="skill-tag">Economic History</span>
+                <span class="skill-tag">Qualitative Research</span>
+            </div>
+            <p class="project-description">
+                An essay analysing the role of industrial policy (MITI) and structural reform in Japan’s rapid post-war recovery.
+            </p>
+            <div class="btn-container">
+                <a href="#" class="btn btn-primary"><i class="fas fa-file-pdf"></i> Read Essay</a>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <h3 class="project-title">Solow-Swan Growth Model</h3>
+            <div class="skills-container">
+                <span class="skill-tag">Mathematical Economics</span>
+                <span class="skill-tag">Algebra</span>
+            </div>
+            <p class="project-description">
+                A theoretical derivation of steady-state capital accumulation under conditions of non-diminishing marginal returns.
+            </p>
+            <div class="btn-container">
+                <a href="#" class="btn btn-primary"><i class="fas fa-file-pdf"></i> Read Assignment</a>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2024 Aditya Sarkar. All Rights Reserved.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
